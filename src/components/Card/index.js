@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+import styles from './styles';
+
 export default function Card({ periodo, frequencia }){
 
   var re = new RegExp(/^[^[]/);
@@ -8,9 +10,9 @@ export default function Card({ periodo, frequencia }){
   re.test(periodo) ? periodo = '[' + periodo : periodo
 
   return(
-    <View>
-      <Text>Periodo: {periodo}</Text>
-      <Text>Frequencia: {frequencia}</Text>
+    <View style={styles.Container}>
+      <Text style={styles.NameValue}>Período: {periodo}</Text>
+      <Text style={styles.NameValue}>Frequência: {frequencia}</Text>
     </View>
   );
 }

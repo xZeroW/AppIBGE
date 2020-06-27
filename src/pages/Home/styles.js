@@ -10,15 +10,23 @@ export default StyleSheet.create({
 
   header: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
     alignItems: 'center'
   },
 
   title: {
-    fontSize: 30,
-    marginBottom: 16,
-    marginTop: 48,
+    fontSize: 24,
+    marginLeft: 10,
     color: '#13131A',
     fontWeight: 'bold'
+  },
+
+  Input: {
+    backgroundColor: '#d9d9d9',
+    paddingVertical: 7,
+    paddingHorizontal: 10,
+    fontSize: 15,
+    borderRadius: 3,
+    marginTop: 10,
+    marginBottom: 10
   }
 })
